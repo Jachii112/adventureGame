@@ -1,0 +1,39 @@
+print("Welcome to my game")
+
+# Information
+
+name = input("Please enter your name: ")
+age = int(input("Please enter your age: "))
+
+print("Hello, " + name + "! You are " + str(age) + " years old!")
+
+# Game
+
+print("Please choose your class")
+print("A = Swordsman / B = Gunner / C = Brawler")
+
+weapon = input("Now choose your weapon! ")
+
+if weapon == 'A':
+    print("You have chosen the Sword!")
+    print("You have encountered a monster")
+    print("Choose what you will do. (1 = You swing sword and defeat the enemy / 2 = You use your sword to defend yourself)")
+    swordAction = input("What you should do? ")
+    
+    if swordAction == '1':
+        print("Kill the enemy")
+        
+    elif swordAction == '2':
+        print("Defending yourself")
+        
+    else:
+        print("Game Error!")
+        
+elif weapon == 'B':
+    print("You have chosen the Gun!")
+elif weapon == 'C':
+    print("You have chosen to fight Barehanded!")
+else:
+    print("Invalid weapon choice!")
+
+print("Game Over.")
